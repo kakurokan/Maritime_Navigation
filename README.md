@@ -79,20 +79,29 @@ Simulador_maritimo/
 
 ### Compilation & Execution
 
-#### 1. Compile the Project
-From the project root directory, compile all Java source files:
+#### 1. Compile and Run
 
 ```bash
-mkdir -p bin && javac -d bin -sourcepath src src/Cliente.java src/Engine/*.java src/GUI/*.java
+mkdir -p bin && javac -d bin -sourcepath src src/Cliente.java src/Engine/*.java src/GUI/*.java && java -cp bin Cliente
 ```
 
-#### 2. Run the Client
+#### 2. Ocean Current Input
 
-```bash
-java -cp bin Cliente
+When the client launches, a dialog box appears requesting the ocean current vector components:
+
+```
+Corrente X: [1.0]
+Corrente Y: [1.0]
 ```
 
-A dialog box will appear asking for the ocean current input (default: 1.0, 1.0). Enter the desired current vector or press OK to use the default values, and the maritime simulator GUI will launch.
+**Example inputs:**
+- Default (mild current): `X=1.0, Y=1.0`
+- Strong northeast current: `X=2.5, Y=2.5`
+- Weak current: `X=0.5, Y=0.5`
+- No current: `X=0.0, Y=0.0`
+- Variable current: `X=1.5, Y=-0.5`
+
+Enter numeric values and click **OK** to start the simulator. Click **Cancel** to exit.
 
 ---
 
