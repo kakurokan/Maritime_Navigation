@@ -1,6 +1,7 @@
 package Engine;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -104,7 +105,7 @@ public class SnapshotSimulacao {
          */
         @Override
         public String toString() {
-            return String.format("T=%d, %s, %.2f", horarioSaida, destino, velocidadeLinear);
+            return String.format(Locale.US, "T=%d, %s, %.2f", horarioSaida, destino, velocidadeLinear);
         }
 
         @Override
