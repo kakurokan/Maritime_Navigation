@@ -1,6 +1,6 @@
 # Trabalho 1 — POO
 
-[![CI](https://github.com/kakurokan/Trabalho_1_POO/actions/workflows/ci.yml/badge.svg)](https://github.com/kakurokan/Trabalho_1_POO/actions/workflows/ci.yml)
+[![CI](https://github.com/kakurokan/Maritime_Navigation/actions/workflows/ci.yml/badge.svg)](https://github.com/kakurokan/Maritime_Navigation/actions/workflows/ci.yml)
 
 Simulador de navegação marítima: navios calculam rotas entre portos (Dijkstra sobre um grafo),
 evitam obstáculos e tempestades, e são coordenados por uma torre de controlo. Inclui uma interface
