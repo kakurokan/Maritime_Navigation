@@ -60,9 +60,9 @@ class NavioTest {
 
     @Test
     void compareTo(){
-        assertEquals(-1,navio.compareTo(navio2));
+        assertTrue(navio.compareTo(navio2) < 0);
 
-        assertEquals(-1,navio2.compareTo(navio));
+        assertTrue(navio2.compareTo(navio) > 0);
     }
 
     @Test

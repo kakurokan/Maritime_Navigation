@@ -8,7 +8,7 @@ public class NavioEmEsperaTest {
     @Test
     void testetoString() {
         SnapshotSimulacao.NavioEmEspera navioEmEspera = new SnapshotSimulacao.NavioEmEspera(5, "Lisboa", 5);
-        String esperada = new String("T=5, Lisboa, 5,00");
+        String esperada = new String("T=5, Lisboa, 5.00");
         assertEquals(esperada, navioEmEspera.toString());
     }
 
