@@ -8,6 +8,7 @@ import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -382,7 +383,7 @@ public class PainelMapa extends JPanel {
      * @pre g != null
      */
     private void desenharRelogio(Graphics2D g) {
-        String textoTempo = String.format("Tempo: %.1f", snapshot.getTempoSimulacao());
+        String textoTempo = String.format(Locale.US, "Tempo: %.1f", snapshot.getTempoSimulacao());
         g.setFont(new Font("Arial", Font.BOLD, 22));
         g.setColor(Color.BLACK);
         FontMetrics metricas = g.getFontMetrics();
@@ -453,7 +454,7 @@ public class PainelMapa extends JPanel {
         g.drawString("da corrente", boxX + 15, boxY + 45);
 
         g.setFont(new Font("Times New Roman", Font.BOLD, 20));
-        g.drawString("X = " + String.format("%.0f", corrente.getX()), boxX + 15, boxY + 80);
-        g.drawString("Y = " + String.format("%.0f", corrente.getY()), boxX + 15, boxY + 100);
+        g.drawString("X = " + String.format(Locale.US, "%.0f", corrente.getX()), boxX + 15, boxY + 80);
+        g.drawString("Y = " + String.format(Locale.US, "%.0f", corrente.getY()), boxX + 15, boxY + 100);
     }
 }

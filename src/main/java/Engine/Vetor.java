@@ -1,5 +1,7 @@
 package Engine;
 
+import java.util.Locale;
+
 /**
  * Representa um vetor bidimensional no sistema de coordenadas cartesianas.
  * Um vetor é definido pelas componentes x e y e inclui operações para
@@ -193,7 +195,7 @@ public class Vetor {
      */
     @Override
     public String toString() {
-        return String.format("[%.2f,%.2f]", this.x, this.y);
+        return String.format(Locale.US, "[%.2f,%.2f]", this.x, this.y);
     }
 
     /**

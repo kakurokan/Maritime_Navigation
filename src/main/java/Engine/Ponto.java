@@ -1,5 +1,7 @@
 package Engine;
 
+import java.util.Locale;
+
 /**
  * Representa um ponto 2D no sistema de coordenadas cartesianas
  * Cada ponto é definido pelas coordenadas x e y
@@ -111,6 +113,6 @@ public class Ponto {
      */
     @Override
     public String toString() {
-        return String.format("(%.2f,%.2f)", this.x, this.y);
+        return String.format(Locale.US, "(%.2f,%.2f)", this.x, this.y);
     }
 }
